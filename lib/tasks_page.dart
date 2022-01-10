@@ -8,7 +8,7 @@ class TasksPage extends StatelessWidget {
     return const Scaffold(
       body: Center(
           child: Text(
-        'T A S K  T R A C K E R',
+        'T A S K   T R A C K E R',
         style: TextStyle(
           fontSize: 35,
           fontWeight: FontWeight.bold,
