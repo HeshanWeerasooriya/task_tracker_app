@@ -5,7 +5,7 @@ class TasksPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
           child: Text(
         'T A S K  T R A C K E R',
