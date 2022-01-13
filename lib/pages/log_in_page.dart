@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -58,11 +60,11 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: const BorderSide(color: Colors.white),
+                              borderSide: BorderSide(color: Color(0xFFFFCBCB)),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: const BorderSide(color: Colors.white),
+                              borderSide: BorderSide(color: Color(0xFFFFCBCB)),
                             ),
                           ),
                         ),
@@ -90,11 +92,11 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: const BorderSide(color: Colors.white),
+                              borderSide: BorderSide(color: Color(0xFFFFCBCB)),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: const BorderSide(color: Colors.white),
+                              borderSide: BorderSide(color: Color(0xFFFFCBCB)),
                             ),
                           ),
                         ),
@@ -104,6 +106,18 @@ class _LoginScreenState extends State<LoginScreen> {
                           child: Padding(
                             padding: const EdgeInsets.symmetric(vertical: 12),
                             child: const Text('Login'),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            textStyle: const TextStyle(
+                              fontFamily: 'balsamiqsans',
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            primary: Color(0xFFFFCBCB),
+                            onPrimary: Colors.black87,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(32.0),
+                            ),
                           ),
                           onPressed: () async {
                             if (formkey.currentState!.validate()) {
@@ -146,17 +160,6 @@ class _LoginScreenState extends State<LoginScreen> {
                               });
                             }
                           },
-                          style: ElevatedButton.styleFrom(
-                            textStyle: const TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold,
-                            ),
-                            primary: Colors.green[400],
-                            onPrimary: Colors.white,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(32.0),
-                            ),
-                          ),
                         ),
                         const SizedBox(height: 10),
                         TextButton(
@@ -169,8 +172,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           child: const Text(
                             'Create new account',
                             style: TextStyle(
-                              color: Colors.green,
-                              fontSize: 15,
+                              color: Colors.black54,
+                              fontSize: 18,
                             ),
                           ),
                         ),

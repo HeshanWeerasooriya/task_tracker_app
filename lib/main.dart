@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:task_tracker/pages/log_in_page.dart';
 import 'package:task_tracker/pages/tasks_page.dart';
 import 'package:task_tracker/pages/sign_up_page.dart';
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color.fromARGB(255, 245, 231, 189),
+        scaffoldBackgroundColor: const Color(0xFFFFFDDE),
+        fontFamily: 'balsamiqsans',
       ),
       home: FirebaseAuth.instance.currentUser == null
           ? const LoginScreen()

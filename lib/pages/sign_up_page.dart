@@ -58,11 +58,13 @@ class _SignupScreenState extends State<SignupScreen> {
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: const BorderSide(color: Colors.white),
+                              borderSide: const BorderSide(
+                                  color: const Color(0xFFFFCBCB)),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: const BorderSide(color: Colors.white),
+                              borderSide:
+                                  const BorderSide(color: Color(0xFFFFCBCB)),
                             ),
                           ),
                         ),
@@ -90,11 +92,13 @@ class _SignupScreenState extends State<SignupScreen> {
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: const BorderSide(color: Colors.white),
+                              borderSide:
+                                  const BorderSide(color: Color(0xFFFFCBCB)),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: const BorderSide(color: Colors.white),
+                              borderSide: const BorderSide(
+                                  color: const Color(0xFFFFCBCB)),
                             ),
                           ),
                         ),
@@ -121,11 +125,13 @@ class _SignupScreenState extends State<SignupScreen> {
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: const BorderSide(color: Colors.white),
+                              borderSide:
+                                  const BorderSide(color: Color(0xFFFFCBCB)),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: const BorderSide(color: Colors.white),
+                              borderSide:
+                                  const BorderSide(color: Color(0xFFFFCBCB)),
                             ),
                           ),
                         ),
@@ -186,11 +192,12 @@ class _SignupScreenState extends State<SignupScreen> {
                           },
                           style: ElevatedButton.styleFrom(
                             textStyle: const TextStyle(
+                              fontFamily: 'balsamiqsans',
                               fontSize: 24,
                               fontWeight: FontWeight.bold,
                             ),
-                            primary: Colors.green[400],
-                            onPrimary: Colors.white,
+                            primary: const Color(0xFFFFCBCB),
+                            onPrimary: Colors.black87,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(32.0),
                             ),
@@ -202,7 +209,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           child: const Text(
                             'I already have an account',
                             style: TextStyle(
-                              color: Colors.green,
+                              color: Colors.black54,
                               fontSize: 15,
                             ),
                           ),
