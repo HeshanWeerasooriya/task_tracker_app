@@ -18,7 +18,6 @@ class _TaskBottomSheetState extends State<TaskBottomSheet> {
   var currentUser = FirebaseAuth.instance.currentUser;
   User? loggedInUser;
   bool isloading = false;
-
   final DataRepository repository = DataRepository();
 
   @override
