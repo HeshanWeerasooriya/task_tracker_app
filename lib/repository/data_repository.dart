@@ -6,9 +6,9 @@ FirebaseAuth auth = FirebaseAuth.instance;
 
 class DataRepository {
   final CollectionReference collection = FirebaseFirestore.instance
-      .collection('users')
+      .collection('tasks')
       .doc(FirebaseAuth.instance.currentUser?.uid)
-      .collection('notes');
+      .collection('task');
 
   Future getCurrentUser() async {
     return auth.currentUser;
